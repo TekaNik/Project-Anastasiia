@@ -175,7 +175,8 @@ main #about-me div.flex-wrapper blockquote {
 
 main #about-me div.flex-wrapper blockquote p {
   font-weight: 300;
-  font-size: 1.3vw;
+  font-size: 1.1vw;
+  line-height: 2em;
 }
 
 main #about-me div.flex-wrapper blockquote footer {
@@ -203,10 +204,15 @@ main #portfolio > div {
 }
 
 main #portfolio > div img {
-  width: 95%;
+  width: 80%;
   max-width: 100%;
   max-height: 50vh;
   height: 20vh;
+}
+
+main #portfolio > div img:hover {
+  width: 90%;
+  height: auto;
 }
 
 main #prices {
