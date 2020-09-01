@@ -16,7 +16,6 @@ html {
 
 h2.allh2 {
   font-size: 3.813vw;
-  line-height: 92px;
   font-weight: 300;
   text-transform: uppercase;
   display: inline-block;
@@ -69,7 +68,7 @@ div.menu-price button, form.menu-price button {
 }
 
 body {
-  background-color: #000;
+  background-color: #444;
   color: #fff;
   font-family: "Epilogue", sans-serif;
   font-size: 16px;
@@ -139,10 +138,14 @@ nav ul li a:hover {
   padding-top: 1em;
 }
 
+main {
+  overflow: hidden;
+}
+
 main #about-me {
   height: 100vh;
   margin-bottom: 5em;
-  border: 5px solid #fff;
+  border-top: 5px solid #fff;
   width: 100vw;
 }
 
@@ -175,7 +178,7 @@ main #about-me div.flex-wrapper blockquote {
 
 main #about-me div.flex-wrapper blockquote p {
   font-weight: 300;
-  font-size: 1.1vw;
+  font-size: 1vw;
   line-height: 2em;
 }
 
@@ -208,11 +211,6 @@ main #portfolio > div img {
   max-width: 100%;
   max-height: 50vh;
   height: 20vh;
-}
-
-main #portfolio > div img:hover {
-  width: 90%;
-  height: auto;
 }
 
 main #prices {
