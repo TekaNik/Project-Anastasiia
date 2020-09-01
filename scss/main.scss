@@ -231,9 +231,10 @@ main{
         p{
             font-weight: map-get($page-font-weight, lighter );
             margin: 0 auto;
-            width: 84vw;
+            width: 50vw;
             font-size: 1.125vw;
             padding-bottom: 7vh;
+            border: 1px solid green;
         }
         div.flex-wrapper-2{
             display: flex;

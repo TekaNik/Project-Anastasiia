@@ -222,9 +222,10 @@ main #prices {
 main #prices p {
   font-weight: 300;
   margin: 0 auto;
-  width: 84vw;
+  width: 50vw;
   font-size: 1.125vw;
   padding-bottom: 7vh;
+  border: 1px solid green;
 }
 
 main #prices div.flex-wrapper-2 {
