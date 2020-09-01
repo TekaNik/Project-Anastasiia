@@ -1,0 +1,410 @@
+@import './Variables';
+@import "./resets";
+
+html{
+    scroll-behavior: smooth;
+ 
+    
+// my global settings
+
+}
+h2.allh2{
+    font-size: 3.813vw;
+    line-height: 92px;
+    font-weight: map-get($page-font-weight, lighter);
+    text-transform: uppercase;
+    display: inline-block;
+    margin-left: 40vw;
+    margin-top: 15vh;
+    margin-bottom: 2em;
+
+    
+}
+div.menu-price, form.menu-price
+{
+    margin: 2em 0;
+    background-color: $page-forms-bg-color;
+    width: 25vw;
+    height: 47vh;
+    border-radius: 20px;
+    h3,span, ul li{
+        text-align: center;
+        text-transform: capitalize;
+        padding:1em;
+        line-height: 1em;
+        font-size:1.7vw;
+        font-weight: map-get($page-font-weight, bold);
+        border-bottom: 1px solid #000000;
+    }
+    span{
+        font-weight: map-get($page-font-weight, grande );
+        line-height: 25px;
+        font-size: 1.8vw;
+        display: inline-block;
+        border-bottom: 1px solid #000000;
+        width:100%;
+    }
+    ul li {
+        font-weight: map-get($page-font-weight, regular);
+        line-height: 15px;
+        font-size: 1vw;
+        border: none;
+        padding-bottom: 0;
+    }
+    button{
+        background-color: $page-btn-bg-color;
+        width: 80%;
+        margin: 1em 1.8vw;
+        border-radius: 1vw;
+        padding: 1em 0.875vw;
+        
+    }
+}
+// div.flex-wrapper{
+//          display: flex;
+//         justify-content: space-evenly;
+// }
+       
+
+body{
+     background-color: $page-bg-color;
+     color: $page-secondary-color;
+     font-family: $page-font-family;
+     font-size: $page-font-size;
+     font-weight: map-get($page-font-weight , regular );
+
+    
+}
+nav ul img{
+    display: none;
+}
+nav {
+    position: fixed;
+    background-color: rgba(0,0,0, 0.8);
+    width: 100vw;
+    height: 12vh;
+    z-index: 1;
+    border-bottom: 2px solid #fff;
+    padding-top: 2.5em;
+    
+    ul{
+        display: flex;
+        justify-content: space-evenly;
+        white-space: nowrap;
+        margin-left: 7em;
+         margin-right: 7em;
+        & li a{
+            text-decoration: none;
+            text-transform: uppercase;
+            line-height: 28px;
+            color: $page-primary-color;
+            font-size: 1.438vw;
+            margin-right: 3em;
+            &:hover{
+                border-bottom: 5px solid;
+            }
+
+    }
+}
+
+}
+#home-page{
+    height: 100vh;
+    background-image: url(/Imgs/homebg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    border-bottom: 5px solid #fff;
+   
+    
+    h1{
+        text-align: center;
+        position: relative;
+        top: 80vh;
+        font-weight: map-get($page-font-weight , grande );
+        font-size: 5.75vw;
+        text-transform: uppercase;
+        span {
+            display: block;
+            font-weight: map-get($page-font-weight , light );
+            padding-top: 1em;
+        }
+    } 
+
+}
+main{
+    
+    #about-me{
+        height: 100vh;
+        margin-bottom: 5em;
+        border: 5px solid #fff;
+        width: 100vw;
+         div.flex-wrapper{
+             display: flex;
+             justify-content: space-evenly;
+           
+            > div{
+               width:35vw;
+               max-width: 50vw;
+               height: 55vh;
+               max-height: 50vh;
+               
+               img{
+                  
+                   height: 100%;
+                   width: 100%; 
+                   
+               }
+               
+            }
+            blockquote {
+                width: 35vw;
+                height: 55vh;
+                max-height: 50vh;
+               
+                p{
+                    font-weight: 300;
+                    font-size: 1.3vw;
+                    
+                }
+                    
+               
+                footer{
+                
+                    font-size: 1.25vw;
+                    line-height: 1.875em;
+                    font-weight: map-get($page-font-weight, bold);
+                    
+                }
+            }
+          
+        }
+    }
+    #portfolio{
+        max-height: 100%;
+        height: 100vh;
+        max-width: 100%;
+        width: 100vw;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        
+        // h2{
+        //     font-size: 3.813em;
+            
+        //     font-weight: map-get($page-font-weight, lighter);
+        //     text-align: center;
+        //     text-transform: uppercase;
+        //     padding-top: 2em;
+        //     padding-bottom: 1em;
+            
+            
+           
+        // }
+        > div{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 2em;
+            margin:1em 9rem;
+            
+
+            img{
+               width: 95%;
+               max-width: 100%;
+               max-height: 50vh;
+               height: 20vh;
+               
+            }
+           
+            
+        }
+       
+    }
+    #prices{
+        height: 100vh;
+        width: 100vw;
+        line-height: 1em;
+        
+        p{
+            font-weight: map-get($page-font-weight, lighter );
+            margin: 0 auto;
+            width: 84vw;
+            font-size: 1.125vw;
+            padding-bottom: 7vh;
+        }
+        div.flex-wrapper-2{
+            display: flex;
+            justify-content: space-evenly;
+        }
+      
+
+    }
+    #contact{
+       
+        height: 100vh;
+        width: auto;
+        margin: 5vw;
+        form{
+            margin: 0 auto;
+            fieldset{
+                border: none;
+                legend{
+                    text-align: center;
+                    padding:1em 2em;
+                    font-size: 2vw;
+                    text-transform: uppercase;
+                   
+                    
+                }
+                label{
+                    text-transform: capitalize;
+                    display: inline-block;
+                    margin: 1em 2em;
+                    
+                }
+                input{
+                    display: block;
+                    margin: 0 auto;
+                    width: 80%;
+                    
+                }
+                button{
+                    
+                    margin-left: 3vw;
+                    margin-top: 5vh;
+                    
+                    padding-top: 2vh;
+                }
+            }
+            
+            
+             
+        }
+        div.social-media{
+            margin-top: 3em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 50%;
+                height: auto;
+                padding-left: 1em;
+            }
+        }
+     
+    }
+}
+footer{
+    text-align: center;
+    span{
+        display: block;
+        padding-bottom: 2vh;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Media Queries
+
+@media only screen and (max-width: 760px){
+        
+    
+
+    main {
+        max-width: 100vw;
+        max-height: 100vh;
+        font-size: 100%;
+        
+        div.flex-wrapper-2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #about-me div.flex-wrapper{
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            div{
+                height: 35vh;
+                width: 100vw;
+                margin-bottom: 5px;
+            }
+            p{
+                font-size: 1vw;;
+                width: 60vw;
+                
+            }
+        }
+        #portfolio {
+            width: 100vw;
+            height: 100vh;
+            overflow: scroll;
+            > div{
+                
+                grid-template-columns: 1fr;
+                
+                
+                img{
+                    width: 50vw;
+                }
+            }
+          
+        }
+    }
+
+    nav ul img{
+        display: block;
+        width: 20px;
+    }
+    div.menu-price, form.menu-price{
+        width: 50vw;
+        height: 35vh;
+        button{
+        width: 90%;
+        height: 4vh;
+        white-space: nowrap;
+        padding-bottom: 30px;
+        padding-top: 0;
+        position: sticky;
+        
+       
+     
+        }
+        h3,span{
+            text-align: center;
+            padding:2em;
+            font-size:1.7vw;
+            font-weight: map-get($page-font-weight, bold);
+            
+        }
+
+    }
+   #send-btn{
+       display: none;
+   }
+
+}
+
