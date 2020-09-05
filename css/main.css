@@ -14,6 +14,14 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: #444;
+  color: #fff;
+  font-family: "Epilogue", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
 h2.allh2 {
   font-size: 3.813vw;
   font-weight: 300;
@@ -24,57 +32,6 @@ h2.allh2 {
   margin-bottom: 2em;
 }
 
-div.menu-price, form.menu-price {
-  margin: 2em 0;
-  background-color: #1E363F;
-  width: 25vw;
-  height: 47vh;
-  border-radius: 20px;
-}
-
-div.menu-price h3, div.menu-price span, div.menu-price ul li, form.menu-price h3, form.menu-price span, form.menu-price ul li {
-  text-align: center;
-  text-transform: capitalize;
-  padding: 1em;
-  line-height: 1em;
-  font-size: 1.7vw;
-  font-weight: 700;
-  border-bottom: 1px solid #000000;
-}
-
-div.menu-price span, form.menu-price span {
-  font-weight: 900;
-  line-height: 25px;
-  font-size: 1.8vw;
-  display: inline-block;
-  border-bottom: 1px solid #000000;
-  width: 100%;
-}
-
-div.menu-price ul li, form.menu-price ul li {
-  font-weight: 400;
-  line-height: 15px;
-  font-size: 1vw;
-  border: none;
-  padding-bottom: 0;
-}
-
-div.menu-price button, form.menu-price button {
-  background-color: #EFEFEF;
-  width: 80%;
-  margin: 1em 1.8vw;
-  border-radius: 1vw;
-  padding: 1em 0.875vw;
-}
-
-body {
-  background-color: #444;
-  color: #fff;
-  font-family: "Epilogue", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-}
-
 nav ul img {
   display: none;
 }
@@ -82,7 +39,7 @@ nav ul img {
 nav {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.8);
-  width: 100vw;
+  width: 100%;
   height: 12vh;
   z-index: 1;
   border-bottom: 2px solid #fff;
@@ -120,7 +77,6 @@ nav ul li a:hover {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  border-bottom: 5px solid #fff;
 }
 
 #home-page h1 {
@@ -135,17 +91,12 @@ nav ul li a:hover {
 #home-page h1 span {
   display: block;
   font-weight: 200;
-  padding-top: 1em;
-}
-
-main {
-  overflow: hidden;
+  padding-top: 65px;
 }
 
 main #about-me {
   height: 100vh;
   margin-bottom: 5em;
-  border-top: 5px solid #fff;
   width: 100vw;
 }
 
@@ -173,7 +124,6 @@ main #about-me div.flex-wrapper > div img {
 main #about-me div.flex-wrapper blockquote {
   width: 35vw;
   height: 55vh;
-  max-height: 50vh;
 }
 
 main #about-me div.flex-wrapper blockquote p {
@@ -186,15 +136,6 @@ main #about-me div.flex-wrapper blockquote footer {
   font-size: 1.25vw;
   line-height: 1.875em;
   font-weight: 700;
-}
-
-main #portfolio {
-  max-height: 100%;
-  height: 100vh;
-  max-width: 100%;
-  width: 100vw;
-  margin-left: 2rem;
-  margin-right: 2rem;
 }
 
 main #portfolio > div {
@@ -213,10 +154,21 @@ main #portfolio > div img {
   height: 20vh;
 }
 
+main #portfolio > div img:hover {
+  -webkit-transform: scale(2.2);
+          transform: scale(2.2);
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
 main #prices {
   height: 100vh;
   width: 100vw;
   line-height: 1em;
+}
+
+main #prices h2 {
+  margin-bottom: 0.70em;
 }
 
 main #prices p {
@@ -224,8 +176,7 @@ main #prices p {
   margin: 0 auto;
   width: 50vw;
   font-size: 1.125vw;
-  padding-bottom: 7vh;
-  border: 1px solid green;
+  margin-bottom: 1em;
 }
 
 main #prices div.flex-wrapper-2 {
@@ -237,13 +188,57 @@ main #prices div.flex-wrapper-2 {
           justify-content: space-evenly;
 }
 
+main #prices div.flex-wrapper-2 .menu-price {
+  background-color: #1E363F;
+  width: 20vw;
+  border-radius: 20px;
+}
+
+main #prices div.flex-wrapper-2 .menu-price h3,
+main #prices div.flex-wrapper-2 .menu-price span,
+main #prices div.flex-wrapper-2 .menu-price ul li {
+  text-align: center;
+  text-transform: capitalize;
+  padding: 1em;
+  font-size: 1.7vw;
+  font-weight: 700;
+  border-bottom: 1px solid #000000;
+}
+
+main #prices div.flex-wrapper-2 .menu-price span {
+  font-weight: 900;
+  font-size: 1.8vw;
+  display: inline-block;
+  border-bottom: 1px solid #000000;
+  width: 100%;
+}
+
+main #prices div.flex-wrapper-2 .menu-price ul li {
+  font-weight: 400;
+  line-height: 15px;
+  font-size: 1vw;
+  border: none;
+}
+
+main #prices div.flex-wrapper-2 .menu-price button {
+  background-color: #EFEFEF;
+  width: 10vw;
+  border-radius: 24px;
+  height: 5vh;
+  margin-left: 55px;
+  white-space: nowrap;
+}
+
 main #contact {
   height: 100vh;
   width: auto;
-  margin: 5vw;
+  margin: 0 auto;
 }
 
 main #contact form {
+  background-color: #1E363F;
+  width: 20vw;
+  border-radius: 20px;
   margin: 0 auto;
 }
 
@@ -271,9 +266,10 @@ main #contact form fieldset input {
 }
 
 main #contact form fieldset button {
-  margin-left: 3vw;
+  margin-left: 2vw;
   margin-top: 5vh;
-  padding-top: 2vh;
+  width: 15.5vw;
+  border-radius: 10px;
 }
 
 main #contact div.social-media {
@@ -304,11 +300,16 @@ footer span {
   padding-bottom: 2vh;
 }
 
+footer span a {
+  color: red;
+}
+
 @media only screen and (max-width: 760px) {
   main {
     max-width: 100vw;
     max-height: 100vh;
-    font-size: 100%;
+    -webkit-transition: 1s ease;
+    transition: 1s ease;
   }
   main div.flex-wrapper-2 {
     display: -webkit-box;
@@ -344,47 +345,32 @@ footer span {
     width: 100vw;
     margin-bottom: 5px;
   }
-  main #about-me div.flex-wrapper p {
-    font-size: 1vw;
-    width: 60vw;
+  main #about-me div.flex-wrapper blockquote p {
+    font-size: 9px;
+    width: 50vw;
+    margin-top: 20px;
+  }
+  main #about-me div.flex-wrapper blockquote footer {
+    padding-bottom: 10px;
   }
   main #portfolio {
     width: 100vw;
     height: 100vh;
-    overflow: scroll;
+  }
+  main #portfolio h2 {
+    margin-top: 3.5em;
   }
   main #portfolio > div {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
   main #portfolio > div img {
-    width: 50vw;
+    width: 20vw;
+    height: 9vh;
   }
   nav ul img {
     display: block;
     width: 20px;
-  }
-  div.menu-price, form.menu-price {
-    width: 50vw;
-    height: 35vh;
-  }
-  div.menu-price button, form.menu-price button {
-    width: 90%;
-    height: 4vh;
-    white-space: nowrap;
-    padding-bottom: 30px;
-    padding-top: 0;
-    position: -webkit-sticky;
-    position: sticky;
-  }
-  div.menu-price h3, div.menu-price span, form.menu-price h3, form.menu-price span {
-    text-align: center;
-    padding: 2em;
-    font-size: 1.7vw;
-    font-weight: 700;
-  }
-  #send-btn {
-    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */
